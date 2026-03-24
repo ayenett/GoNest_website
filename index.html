@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoNest - Share the Ride, Share the Journey</title>
+    <meta name="description"
+        content="GoNest is a modern carpooling app designed for safe, convenient, and affordable travel.">
+    <!-- Google Fonts: Outfit & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="assets/logo.png" alt="GoNest Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home"><i class="ph ph-house"></i> Home</a></li>
+                <li><a href="#features"><i class="ph ph-map-trifold"></i> How it works</a></li>
+                <li><a href="#security"><i class="ph ph-shield-check"></i> Security</a></li>
+                <li><a href="#about"><i class="ph ph-users"></i> About Us</a></li>
+            </ul>
+            <a href="#download" class="btn-primary-sm">Get the App</a>
+            <!-- Mobile Menu Toggle -->
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Pinned for 3D Phone Animation) -->
+    <section id="home" class="hero-pinned-container">
+        <!-- Canvas for scroll-tied image sequence -->
+        <canvas id="hero-canvas"></canvas>
+
+        <div class="hero-content">
+            <div class="container hero-container">
+                <div class="hero-text">
+                    <h1 class="gsap-hero-text">Share the Ride,<br><span>Share the Journey</span></h1>
+                    <p class="gsap-hero-text delay-1">GoNest connects you with reliable drivers and passengers to make
+                        your commute safer, cheaper, and more sustainable. Join the endless loop of sharing.</p>
+                    <div class="hero-actions gsap-hero-text delay-2">
+                        <a href="#download" class="btn-primary">Download Now</a>
+                        <a href="#features" class="btn-secondary">Learn More</a>
+                    </div>
+
+                    <div class="stats gsap-hero-text delay-3">
+                        <div class="stat-item">
+                            <span class="stat-num">Smart Matching</span>
+                            <span class="stat-label">AI-powered ride pairing</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">Verified Users</span>
+                            <span class="stat-label">Safety First</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">24/7 Support</span>
+                            <span class="stat-label">Always Available</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <!-- HOW IT WORKS -->
+    <section id="features" class="how-it-works section-padding">
+        <div class="container">
+
+            <!-- Section Title -->
+            <div class="section-header text-center how-it-works-title">
+                <h2>How it works</h2>
+            </div>
+
+            <!-- DRIVER -->
+            <div class="how-row">
+                <div class="how-text">
+                    <h2>For Drivers — Share Your Ride</h2>
+                    <p>
+                        Driving anyway? Turn empty seats into extra income.
+                        Share your route, connect with passengers, and make every trip more worthwhile.
+                    </p>
+
+                    <ul class="how-list">
+                        <li><i class="ph-fill ph-check-circle"></i> Post your trip </li>
+                        <li><i class="ph-fill ph-check-circle"></i> Choose your passengers </li>
+                        <li><i class="ph-fill ph-check-circle"></i> Earn while driving </li>
+                    </ul>
+                </div>
+
+                <div class="how-image">
+                    <img src="assets/driver.jpg" alt="Driver">
+                </div>
+            </div>
+
+            <!-- RIDER -->
+            <div class="how-row reverse">
+                <div class="how-image">
+                    <img src="assets/rider.png" alt="Rider App">
+                </div>
+
+                <div class="how-text">
+                    <h2>For Riders — Find Affordable Trips</h2>
+                    <p>
+                        Discover rides that match your route and schedule.
+                        Book quickly, save money, and travel with trusted drivers.
+                    </p>
+
+                    <ul class="how-list">
+                        <li><i class="ph-fill ph-check-circle"></i> Search rides that fit your plan</li>
+                        <li><i class="ph-fill ph-check-circle"></i> Request and confirm easily</li>
+                        <li><i class="ph-fill ph-check-circle"></i> Travel at a lower cost</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="why-section">
+        <div class="container">
+
+            <h1 class="why-title">Why choose GoNest?</h1>
+
+            <div class="card-grid">
+
+                <!-- CARD 1 -->
+                <div class="card">
+                    <div class="card-top">
+                        <span class="tag">Save More</span>
+                        <h3>Cut Travel Costs</h3>
+                    </div>
+                    <div class="card-bottom">
+                        <p>
+                            Share your ride and split expenses with others.
+                            Travel smarter without spending too much.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="card">
+                    <div class="card-top">
+                        <span class="tag">Go Green</span>
+                        <h3>Reduce air pollution</h3>
+                    </div>
+                    <div class="card-bottom">
+                        <p>
+                            Fewer cars on the road means less pollution.
+                            Help reduce your carbon footprint every trip.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="card">
+                    <div class="card-top">
+                        <span class="tag">User-friendly</span>
+                        <h3>Convenient and comfortable</h3>
+                    </div>
+                    <div class="card-bottom">
+                        <p>
+                            Find, book, and share rides in just a few taps
+                            with a smooth and secure experience.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- FAQ SECTION -->
+    <section class="faq-section">
+        <div class="container">
+
+            <h2 class="faq-title">Let's answer the question</h2>
+
+            <!-- Q1 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    What is carpooling?
+                    <span class="faq-icon">⌄</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Carpooling is when multiple people share a ride in the same car, usually going in a similar
+                        direction,
+                        to save money, reduce traffic, and lower air pollution.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Q2 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    Is carpooling the same as ride-hailing?
+                    <span class="faq-icon">⌄</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        No, they are different.<br><br>
+                        Carpooling is about sharing a ride with others, often splitting the cost.<br>
+                        Ride-hailing is a service where you book a private ride (like a taxi) through an app.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Q3 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    How safe is GoNest?
+                    <span class="faq-icon">⌄</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        GoNest is designed with safety as a top priority. It includes features like verified users,
+                        driver and passenger ratings, and trip tracking to ensure a secure and reliable experience for
+                        everyone.
+                    </p>
+                </div>
+            </div>
+            <!-- Q4 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    Can I choose who I travel with?
+                    <span class="faq-icon">⌄</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Yes, you can.<br><br>
+                        GoNest allows drivers to select their passengers and riders to view driver profiles,
+                        ratings, and reviews before booking. This helps ensure a comfortable and trustworthy
+                        experience for everyone.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Q5 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    How do payments work on GoNest?
+                    <span class="faq-icon">⌄</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Payments are handled securely within the app.<br><br>
+                        Passengers pay through the platform, and drivers receive their share after the trip
+                        is completed, ensuring a safe and transparent transaction for both sides.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Security Section (Pinned for 3D Security Animation) -->
+    <section id="security" class="security-pinned-container">
+        <!-- Canvas for scroll-tied image sequence -->
+        <canvas id="security-canvas"></canvas>
+
+        <div class="security-content">
+            <div class="container security-inner">
+                <h2 class="huge-headline">Your safety is our <span>#1 priority</span></h2>
+
+                <!-- Interactive glassmorphism card -->
+                <div class="glass-tilt-card" data-tilt>
+                    <div class="glass-inner">
+                        <h3>Hyper-Realistic Security</h3>
+                        <p>Our motion tracking and identity verification systems are class-leading. We ensure that every
+                            ride you take is monitored and protected with high-end encryption.</p>
+                        <div class="security-badges">
+                            <span class="badge">Verified users</span>
+                            <span class="badge">Real-time GPS</span>
+                            <span class="badge">24/7 Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Safety Features -->
+    <section class="safety-features">
+        <div class="container">
+
+            <h2 class="section-title gsap-fade-up">Key Safety Features</h2>
+
+            <div class="features-grid gsap-fade-in">
+
+                <!-- 1 -->
+                <div class="feature-item">
+                    <div class="icon-box">
+                        <i class="ph ph-identification-card"></i>
+                    </div>
+                    <h3>Driver and Passenger Verification</h3>
+                    <p>Safety and trust with thorough verification.</p>
+                </div>
+
+                <!-- 2 -->
+                <div class="feature-item">
+                    <div class="icon-box">
+                        <i class="ph ph-siren"></i>
+                    </div>
+                    <h3>In-app Emergency Assistance</h3>
+                    <p>You can request immediate help through the app, with an SOS button and the ability to call your
+                        trusted contacts instantly.</p>
+                </div>
+
+                <!-- 3 -->
+                <div class="feature-item">
+                    <div class="icon-box">
+                        <i class="ph ph-star"></i>
+                    </div>
+                    <h3>Rating and Reviews</h3>
+                    <p>Rate your ride and leave reviews for complete transparency.</p>
+                </div>
+
+                <!-- 4 -->
+                <div class="feature-item">
+                    <div class="icon-box">
+                        <i class="ph ph-map-pin"></i>
+                    </div>
+                    <h3>GPS Tracking</h3>
+                    <p>Track your ride in real-time for enhanced safety and visibility.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="section-header text-center gsap-fade-up about-title">
+                <h2>Meet the <span class="text-go">Go</span><span class="text-nest">Nest</span> Team</h2>
+            </div>
+
+            <div class="about-content gsap-fade-in">
+                <div class="team-image-wrapper interactive-wrapper">
+                    <!-- The large team layout image -->
+                    <img src="assets/Team.png" alt="GoNest Team" class="team-img drop-shadow interactive-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Footer -->
+    <footer class="footer">
+        <div class="footer-cta text-center">
+            <h2 class="gsap-fade-up">Ready to change how you travel?</h2>
+            <a href="#download" class="btn-primary gsap-fade-up delay-1 mt-2">GoNest is on the way</a>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/logo.png" alt="GoNest Logo" class="footer-logo">
+                    <p>Share the ride, split the cost, travel together.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright text-center">
+                <p>&copy; 2026 GoNest. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
